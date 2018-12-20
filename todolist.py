@@ -32,9 +32,6 @@ class Initial(QMainWindow, Ui_Initial):
 
         self.show()
 
-    def new_todo(self):
-        pass
-
     def open_todo(self):
         global window
         window = WorkPlace(self.todo)
