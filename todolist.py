@@ -23,7 +23,7 @@ class Initial(QMainWindow, Ui_Initial):
         lst = ['']
         for i in files:
             if i.split('.')[-1] == 'todo':
-                lst.append(i)
+                lst.append(i.split('.')[0])
         self.listTodo.addItems(lst)
 
         self.openTodoButtom.clicked.connect(self.open_todo)
